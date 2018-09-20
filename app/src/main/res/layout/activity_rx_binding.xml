@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rxtest.RxBindingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联合判断："
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="name" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="age" />
+
+        <EditText
+            android:id="@+id/et_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="sex" />
+
+        <Button
+            android:id="@+id/btn_pull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认提交" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮防抖（2s内只响应一次）" />
+
+    <Button
+        android:id="@+id/btn_longclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="长按监听" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="联想搜索优化" />
+
+    <Button
+        android:id="@+id/btn_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="other"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_continueClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连续点击"
+        android:textAllCaps="false" />
+</LinearLayout>
